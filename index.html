@@ -34,6 +34,20 @@
             }
         }
 
+
+        @page three {
+            size: Letter;
+            @frame body {
+                width: 612pt;
+                height: 600pt;
+                margin-left: 40px;
+                margin-right: 40px;
+                margin-top: 40px;
+                left: 0pt;
+                top: 0pt;
+            }
+        }
+
         @font-face {
             font-family: Roboto-Regular;
             src: url('roboto/Roboto-Regular.ttf');
@@ -117,7 +131,6 @@
             <th class='head-cell'>Gold<br>(limit 2)</th>
             <th class='head-cell'>Platinum<br>(limit 1)</th>
         </tr>
-        <br><br>
         <tr>
             <td class='gray-cell'>Donation Amount</td>
             <td class='white-cell'>$1,000</td>
@@ -161,5 +174,49 @@
             <td class='gray-cell'><img src='orange.png'></img></td> 
         </tr>
     </table>
+
+    <pdf:nextpage name='three'>
+
+    <div style='font-size:12pt'>
+        <h1 class='bold'>Frequently Asked Questions</h1>
+        
+        <h2 class='bold' style='color:#EE7F31'>Where is  the event being held?</h2>
+        <p>
+            The venue is  located at  the University  of  California, Riverside.  It  will  be  held  inside  Bourne's  
+            College of  Engineering.  This  venue is  home  to  a beautiful courtyard and rooms for all the 
+            hackers coding  needs. 
+        </p>
+
+        <h2 class='bold' style='color:#EE7F31'>Why is it named Citrus Hack?</h2>
+        <p>
+            Riverside is  known as  one of  the fore  runners in  orange  making, around  the school  are 
+            thousands of  orange  trees that  are being used  for research  and to  create  the most  delicious OJ. 
+            We  wanted  our hackathon to  promote the unknown beauties  of  the inland  empire, while also  
+            expressing  its rise  in  technologic activity.
+        </p>
+
+        <h2 class='bold' style='color:#EE7F31'>Who comes to Hackathons?</h2>
+        <p>
+            Hackathons  house the brightest and quickest  mind  of  all of  the universities  around  the globe.  At  
+            a Hackathon you will  find  the project leaders,  the wiz kids, and the problem solvers.    In  the end,  
+            it's  a bunch of  passionate  and talented  coders  who love  to  problem solve,  build,  and create  
+            masterpiece all while under the pressure  of  a thirty-six  hour  clock.
+        </p>
+
+        <h2 class='bold' style='color:#EE7F31'>What type of swag should we bring?</h2>
+        <p>
+            We  welcome anything  from  T-shirts  to  sunglasses. We  encourage sponsors  to  bring and 
+            distribute  materials.  However,  if  you have  any questions on  a type  of  "swag", just  talk  to  us  
+            about it!!
+        </p>
+
+
+        <h2 class='bold' style='color:#EE7F31'>How  much  fun are we  allowed to  have?</h2>
+        <p>
+            Bring as  much  "fun" as  possible, bring cool  toys  and tricks. Anything  that  WOW’s you we  wanna 
+            see!
+        </p>
+
+    </div>
 </body>
 </html>
