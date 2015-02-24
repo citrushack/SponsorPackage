@@ -21,6 +21,19 @@
             }
         }
 
+        @page two {
+            size: Letter;
+            @frame body {
+                width: 612pt;
+                height: 600pt;
+                margin-left: 40px;
+                margin-right: 40px;
+                margin-top: 40px;
+                left: 0pt;
+                top: 0pt;
+            }
+        }
+
         @font-face {
             font-family: Roboto-Regular;
             src: url('roboto/Roboto-Regular.ttf');
@@ -33,11 +46,38 @@
         .bold {
             font-family: Roboto-Bold;
         }
+
+        .head-cell {
+            background-color: #EE3925;
+            color: white;
+            padding-top: 5pt;
+            padding-bottom: 5pt;
+        }
+
+        .gray-cell {
+            background-color: #F0F0F0;
+            padding-top: 5pt;
+            padding-bottom: 5pt;
+            padding-left: 5pt;
+            padding-right: 5pt;
+            text-align: center;
+            border-bottom: 3px solid #C8C8C8;
+        }
+
+        .white-cell {
+            background-color: white;
+            padding-top: 5pt;
+            padding-bottom: 5pt;
+            padding-left: 5pt;
+            padding-right: 5pt;
+            text-align: center;
+            border-bottom: 3px solid #C8C8C8;
+        }
     </style>
 </head>
 <body>
     <!-- Header -->
-    <div id='header' style='background-color: #EE3925;'>
+    <div id='header' style='background-color: #EE3925; padding-left:35pt;'>
         <img src='banner.png'></img>
     </div>
     <p style='font-size:15pt; font-family: Roboto-Regular'>
@@ -66,5 +106,60 @@
         Best,<br>
         The Citrus  Hack  Team
     </p>
+    
+    <pdf:nextpage name='two'>
+    
+    <table style='font-size:15pt; font-family: Roboto-Regular; border:1px solid #C8C8C8;'>
+        <tr>
+            <th class='head-cell'>Level<br></th>
+            <th class='head-cell'>Bronze<br></th>
+            <th class='head-cell'>Silver<br></th>
+            <th class='head-cell'>Gold<br>(limit 2)</th>
+            <th class='head-cell'>Platinum<br>(limit 1)</th>
+        </tr>
+        <br><br>
+        <tr>
+            <td class='gray-cell'>Donation Amount</td>
+            <td class='white-cell'>$1,000</td>
+            <td class='gray-cell'>$3,500</td>
+            <td class='white-cell'>$7,500</td>
+            <td class='gray-cell'>$15,000</td>
+        </tr>
+        <tr>
+            <td class='gray-cell'>Logo on all promotional material *</td>
+            <td class='white-cell'><img src='orange.png'></img></td>
+            <td class='gray-cell'><img src='orange.png'></img></td>
+            <td class='white-cell'><img src='orange.png'></img></td>
+            <td class='gray-cell'><img src='orange.png'></img></td> 
+        </tr>
+        <tr>
+            <td class='gray-cell'>Resume Book</td>
+            <td class='white-cell'><img src='orange.png'></img></td>
+            <td class='gray-cell'><img src='orange.png'></img></td>
+            <td class='white-cell'><img src='orange.png'></img></td>
+            <td class='gray-cell'><img src='orange.png'></img></td> 
+        </tr>
+        <tr>
+            <td class='gray-cell'>On Site Tabling</td>
+            <td class='white-cell'></td>
+            <td class='gray-cell'><img src='orange.png'></img></td>
+            <td class='white-cell'><img src='orange.png'></img></td>
+            <td class='gray-cell'><img src='orange.png'></img></td> 
+        </tr>
+        <tr>
+            <td class='gray-cell'>Branded Prizes</td>
+            <td class='white-cell'></td>
+            <td class='gray-cell'></td>
+            <td class='white-cell'><img src='orange.png'></img></td>
+            <td class='gray-cell'><img src='orange.png'></img></td> 
+        </tr>
+        <tr>
+            <td class='gray-cell'>Opening Speech</td>
+            <td class='white-cell'></td>
+            <td class='gray-cell'></td>
+            <td class='white-cell'></td>
+            <td class='gray-cell'><img src='orange.png'></img></td> 
+        </tr>
+    </table>
 </body>
 </html>
