@@ -62,3 +62,6 @@ target/
 [Ss]cripts
 pyvenv.cfg
 pip-selfcheck.json
+
+# Compiled pdf
+citrushack.pdf
